@@ -6,22 +6,19 @@
   padding-bottom: 40px;
   min-height: calc(100vh - 332px);
 
-
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
     padding-top: 60px;
     padding-bottom: 60px;
-      min-height: calc(100vh - 301px);
-
+    min-height: calc(100vh - 301px);
   }
 
   @media screen and (min-width: 1280px) {
     row-gap: 50px;
     column-gap: 12px;
-  min-height: calc(100vh - 299px);
-
+    min-height: calc(100vh - 299px);
   }
 }
 
@@ -100,5 +97,30 @@
   }
   100% {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+// ============ BUTTONS Genry
+#tags {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.tag {
+  color: white;
+  padding: 10px 20px;
+  background-color: #028578;
+  box-shadow: 2px 2px 5px #16413c;
+  border-radius: 50px;
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(2px);
+    // translate: scaleY(1.5);
   }
 }
